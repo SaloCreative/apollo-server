@@ -1,6 +1,6 @@
-const gitlab_queries = require('./gitlab/query');
+const demo_queries = require('./demo/query');
 module.exports = {
   Query: {
-    ...gitlab_queries
+    ...demo_queries
   }
 };

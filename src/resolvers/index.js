@@ -1,9 +1,9 @@
 const query = require('./query');
-const gitlab_resolvers = require('./gitlab');
+const demo_resolvers = require('./demo');
 // const mutation = require('./mutation');
 
 module.exports = {
   ...query,
-  ...gitlab_resolvers
+  ...demo_resolvers
   // ...mutation,
 };

@@ -7,7 +7,7 @@ const resolvers = require('./resolvers');
 const build_config = require('./config');
 
 // MODELS
-const gitlab_model = require('./models/gitlab');
+const demo_model = require('./models/demo');
 
 // Global config options for the application
 const config = build_config();
@@ -22,7 +22,7 @@ const server = new ApolloServer({
 
     // Initialize data models and pass dependencies
     const models = {
-      gitlab: gitlab_model({ config })
+      demo: demo_model({ config })
     };
 
     return {

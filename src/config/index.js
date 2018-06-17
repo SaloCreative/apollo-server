@@ -1,10 +1,9 @@
 const apis = {
-  gitlab: {
-    url: 'https://gitlab.frontendserviceaccount.com/api/v4',
+  demo: {
+    url: 'https://jsonplaceholder.typicode.com',
     options: {
       headers: {
-        'Content-Type': 'application/json',
-        'Private-Token': 'fPCibyDVEaNPvFX3BSvd'
+        'Content-Type': 'application/json'
       }
     }
   }

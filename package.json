@@ -1,0 +1,37 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "GraphQL/Apollo server for demo apps",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaloCreative/graphql-server.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "js",
+    "node"
+  ],
+  "author": "Rich Comber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaloCreative/graphql-server/issues"
+  },
+  "homepage": "https://github.com/SaloCreative/graphql-server#readme",
+  "dependencies": {
+    "apollo-engine": "latest",
+    "apollo-server": "2.0.0-alpha.2",
+    "dataloader": "^1.4.0",
+    "dotenv": "^5.0.1",
+    "graphql": "^0.13.2",
+    "isemail": "^3.1.2",
+    "lodash": "^4.17.10",
+    "node-fetch": "^2.1.2",
+    "sequelize": "^4.37.6",
+    "sqlite3": "^4.0.0"
+  }
+}

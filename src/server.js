@@ -8,6 +8,7 @@ const build_config = require('./config');
 
 // MODELS
 const demo_model = require('./models/demo');
+const auth_model = require('./models/auth');
 
 // Global config options for the application
 const config = build_config();
@@ -22,7 +23,8 @@ const server = new ApolloServer({
 
     // Initialize data models and pass dependencies
     const models = {
-      demo: demo_model({ config })
+      demo: demo_model({ config }),
+      auth: auth_model({ config })
     };
 
     return {

@@ -4,6 +4,19 @@ module.exports = `
     users: [User]
   }
 
+  type Mutation {
+    login(email: String!, password: String!): Login
+  }
+
+  type Login {
+    id: ID
+    email: String
+    firstName: String
+    lastName: String
+    grants: [String]
+    token: String
+  }
+
   type Post @cacheControl(maxAge: 600) {
     id: ID
     title: String

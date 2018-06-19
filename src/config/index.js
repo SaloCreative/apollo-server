@@ -6,6 +6,14 @@ const apis = {
         'Content-Type': 'application/json'
       }
     }
+  },
+  auth: {
+    url: 'http://localhost:3000',
+    options: {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
   }
 }
 

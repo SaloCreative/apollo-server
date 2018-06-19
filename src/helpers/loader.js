@@ -6,7 +6,12 @@ module.exports = function make_loader(fetch) {
       queries => {
         return Promise.all(
           queries.map(([url, config]) => {
-            return fetch(url, config).then(res => res.json());
+            return fetch(url, config).then(res => { 
+              return { 
+                data: res.json(),
+                status: res.status 
+              } 
+            });
           }),
         );
       },
